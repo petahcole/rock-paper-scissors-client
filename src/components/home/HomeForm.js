@@ -3,15 +3,15 @@ import TextInput from '../common/TextInput';
 import SelectInput from '../common/SelectInput';
 
 const HomeForm = ({game, weaponOptions, onSave, onChange, loading, errors})  =>  {
+  console.log(weaponOptions)
   return (
     <form>
-      <h1>Make your selection. Place your bet</h1>
+      <h2>Make your selection. Place your bet</h2>
       <TextInput
         name="bet"
         label="Bet"
         value={game.balance}
         onChange={onChange}/>
-        {error && <div className="alert alert-danger"}>{error}</div>
 
       <SelectInput
         name="weapon"
@@ -31,7 +31,7 @@ const HomeForm = ({game, weaponOptions, onSave, onChange, loading, errors})  => 
   );
 };
 
-CourseForm.PropTypes = {
+HomeForm.PropTypes = {
   game: React.PropTypes.object.isRequired,
   weaponOptions: React.PropTypes.array.isRequired,
   onSave: React.PropTypes.func.isRequired,

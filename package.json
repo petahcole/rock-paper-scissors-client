@@ -6,11 +6,7 @@
     "start": "npm-run-all --parallel open:src lint:watch",
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
-    "lint:watch": "npm run lint -- --watch",
-    "build:html": "babel-node tools/buildHTML.js",
-    "prebuild": "npm-run-all build:html",
-    "build": "babel-node tools/build.js",
-    "postbuild": "babel-node tools/distServer.js"
+    "lint:watch": "npm run lint -- --watch"
   },
   "author": "Cole Batson",
   "license": "MIT",

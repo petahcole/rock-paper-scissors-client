@@ -1,8 +1,7 @@
-import React, { PropTypes } from 'react';
+import React, {PropTypes} from 'react';
 import Header from './common/Header';
 
 class Layout extends React.Component {
-
   render()  {
     return(
       <div>
@@ -15,6 +14,6 @@ class Layout extends React.Component {
 
 Layout.propTypes = {
   children: PropTypes.object.isRequired
-}
+};
 
-export default Layout
+export default Layout;
