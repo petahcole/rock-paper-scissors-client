@@ -1,9 +1,12 @@
 const game =
   {
     id: '1',
+    user: '',
     balance: 100,
-    newBalance: 0,
-    weapons: ['rock', 'paper', 'scissors']
+    newBalance: 100,
+    bet: 0,
+    weapons: ['rock', 'paper', 'scissors'],
+    winner: null
   }
 
 

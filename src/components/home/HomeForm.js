@@ -3,14 +3,26 @@ import TextInput from '../common/TextInput';
 import SelectInput from '../common/SelectInput';
 
 const HomeForm = ({game, weaponOptions, onSave, onChange, loading, errors})  =>  {
-  console.log(weaponOptions)
+
   return (
     <form>
       <h2>Make your selection. Place your bet</h2>
       <TextInput
+        name="user"
+        label="Username"
+        value={game.user}
+        onChange={onChange}/>
+
+      <h5>Current Balance</h5>
+      <h6>{game.balance}</h6>
+
+      <h5>New Balance</h5>
+      <h6>{game.balance}</h6>
+
+      <TextInput
         name="bet"
-        label="Bet"
-        value={game.balance}
+        label="Place Bet"
+        value={game.bet}
         onChange={onChange}/>
 
       <SelectInput
